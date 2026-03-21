@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Drag & Drop Between Two Boxes</title>
     <link rel="stylesheet" href="./basic-drag-drop-between-boxes.css">
 </head>
+
 <body>
+    <div class="container">
+        <h3>Drag and Drop</h3>
+        <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <p id="para" draggable="true" ondragstart="dragstartHandler(event)">[Item 1]</p>
+        </div>
 
-    <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
-    <p id="para" draggable="true" ondragstart="dragstartHandler(event)">[Item 1]</p> </div>
-
-    <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
-
+        <div id="div2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    </div>
     <script src="./basic-drag-drop-between-boxes.js"></script>
 </body>
+
 </html>

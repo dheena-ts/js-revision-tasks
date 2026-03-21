@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(119, 179, 219);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 350px;
+    padding: 20px;
+    background-color:rgb(190, 189, 189);
+    border-radius: 10px;
+}
+
+#userInput{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+button{
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+label{
+    font-size: 25px;
+    font-weight: bold;
+}

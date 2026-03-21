@@ -1,0 +1,35 @@
+body { 
+    display: flex;
+    background-color: rgb(12, 46, 46);
+    gap: 20px;
+    padding: 20px
+    
+}
+
+.column {
+    width: 200px;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px
+}
+
+.task {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 250px;
+    padding: 20px;
+    background-color:rgb(255, 245, 245);
+    background-color: rgb(247, 242, 237);
+    border-radius: 10px;
+}

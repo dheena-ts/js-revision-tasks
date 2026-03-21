@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(66, 221, 208);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 350px;
+    padding: 20px;
+    background-color: rgb(223, 218, 212);
+    border-radius: 10px;
+}

@@ -4,5 +4,22 @@
   height: 35px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid black;
+  border: 2px solid black;
+}
+
+body{
+    background-color: rgb(133, 148, 145);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
 }

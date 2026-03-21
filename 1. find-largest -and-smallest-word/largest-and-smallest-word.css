@@ -1,0 +1,17 @@
+body{
+    background-color: cadetblue;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 350px;
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 10px;
+}

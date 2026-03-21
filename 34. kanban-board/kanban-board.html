@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./kanban-board.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="column" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <h3>TODO</h3>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task1">Task 1</div>
+            <div class="task" draggable="true" ondragstart="drag(event)" id="task2">Task 2</div>
+        </div>
+        <div class="column" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <h3>IN PROGRESS</h3>
+        </div>
+        <div class="column" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <h3>DONE</h3>
+
+        </div>
+
+        <script src="./kanban-board.js"></script>
+</body>
+
+</html>

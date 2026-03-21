@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copy Text to Clipboard</title>
     <link rel="stylesheet" href="./copy-text-to-clipboard.css">
 </head>
+
 <body>
-    <label for="">Enter a text: </label>
-    <input type="text" id="userInput">
+    <div class="container">
+        <label for="">Enter a text</label>
+        <input type="text" id="userInput">
 
-    <button id="copyBtn" onclick="textCopy()">Copy Button</button>
+        <button id="copyBtn" onclick="textCopy()">Copy Button</button>
 
-    <div id="messageDiv"></div>
+        <div id="messageDiv"></div>
+    </div>
+
 
     <script src="./copy-text-to-clipboard.js"></script>
 </body>
+
 </html>

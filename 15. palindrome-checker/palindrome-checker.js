@@ -5,8 +5,11 @@ function isPalindrome(){
     
     const temp = input.split("").reverse().join("")
 
-    if(!input || Number){
+    if(!input){
         error.innerHTML="Please enter a valid input"
+    }
+    else if(!isNaN(input)){
+        error.innerHTML="Number not allowed"
     }
 
     else if(temp == input){

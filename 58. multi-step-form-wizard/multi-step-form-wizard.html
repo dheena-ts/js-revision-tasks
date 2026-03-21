@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search with Highlighted Matches</title>
+    <link rel="stylesheet" href="./multi-step-form-wizard.css">
+</head>
+
+<body>
+
+    <div id="step1" class="step active">
+        <h3>Personal Info</h3>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <button onclick="next1()">Next</button>
+    </div>
+    <div id="step2" class="step">
+        <h3>Address</h3>
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="country" placeholder="Country">
+        <button onclick="prev1()">Previous</button>
+        <button onclick="next2()">Next</button>
+    </div>
+    <div id="step3" class="step">
+        <h3>Review</h3>
+        <p id="review"></p>
+        <button onclick="prev2()">Previous</button>
+        <button onclick="submitForm()">Submit</button>
+    </div>
+    <script src="./multi-step-form-wizard.js"></script>
+</body>
+
+</html>

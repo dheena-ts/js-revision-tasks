@@ -1,0 +1,39 @@
+body{
+    background-color: #4C5C2D;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 350px;
+    padding: 20px;
+    background-color: #daccb7;
+    border-radius: 10px;
+}
+
+#userInput{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+#reverseDiv{
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+#errorDiv{
+    color: rgb(212, 16, 16);
+    font-size: 20px;
+}
+
+label{
+    font-size: 25px;
+    font-weight: bold;
+}

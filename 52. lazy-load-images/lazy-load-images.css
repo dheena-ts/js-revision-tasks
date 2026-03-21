@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    background-color: burlywood;
+    text-align: center
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 50px auto;
+    background: #ddd
+}

@@ -1,38 +1,30 @@
-const list = document.querySelector('.sortable-list');
-let draggingItem = null;
-
-list.addEventListener('dragstart', (e) => {
-    draggingItem = e.target;
-    e.target.classList.add('dragging');
+let list = document.getElementById("taskList")
+let dragItem = null
+list.addEventListener("dragstart", e => {
+    dragItem = e.target
+    e.target.classList.add("dragging")
 })
-
-list.addEventListener('dragend', (e) => {
-    e.target.classList.remove('dragging');
-    document.querySelectorAll('.sortable-item').forEach(item => item.classList.remove('over'));
-    draggingItem = null;
-});
-
-list.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    const draggingOverItem = getDragAfterElement(list, e.clientY);
-    document.querySelectorAll('.sortable-item').forEach(item => item.classList.remove('over'));
-    if (draggingOverItem) {
-        draggingOverItem.classList.add('over');
-        list.insertBefore(draggingItem, draggingOverItem);
+list.addEventListener("dragend", e => {
+    e.target.classList.remove("dragging")
+})
+list.addEventListener("dragover", e => {
+    e.preventDefault()
+    let afterElement = getDragAfterElement(list, e.clientY)
+    if (afterElement == null) {
+        list.appendChild(dragItem)
     } else {
-        list.appendChild(draggingItem);
+        list.insertBefore(dragItem, afterElement)
     }
 })
 function getDragAfterElement(container, y) {
-    const draggableElements = [...container.querySelectorAll('.sortable-item:not(.dragging)')];
-
-    return draggableElements.reduce((closest, child) => {
-        const box = child.getBoundingClientRect();
-        const offset = y - box.top - box.height / 2;
+    let elements = [...container.querySelectorAll("li:not(.dragging)")]
+    return elements.reduce((closest, child) => {
+        let box = child.getBoundingClientRect()
+        let offset = y - box.top - box.height / 2
         if (offset < 0 && offset > closest.offset) {
-            return { offset: offset, element: child };
+            return { offset: offset, element: child }
         } else {
-            return closest;
+            return closest
         }
-    }, { offset: Number.NEGATIVE_INFINITY }).element;
+    }, { offset: Number.NEGATIVE_INFINITY }).element
 }

@@ -10,25 +10,26 @@
 
 <body>
 
-    <label for="">Enter name: </label>
-    <input type="text" placeholder="Name" id="name">
+    <div class="container">
+        <label for="">Enter name: </label>
+        <input type="text" placeholder="Name" id="name">
 
-    <label for="">Enter age: </label>
-    <input type="text" placeholder="Age" id="age">
+        <label for="">Enter age: </label>
+        <input type="text" placeholder="Age" id="age">
 
-    <button onclick="addRow()">Add</button>
+        <button onclick="addRow()">Add</button>
 
-    <table id="dataTable">
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        </thead>
-        <tbody>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 
-        </tbody>
-    </table>
     <script src="./dynamic-table-row-add.js"></script>
 </body>
 

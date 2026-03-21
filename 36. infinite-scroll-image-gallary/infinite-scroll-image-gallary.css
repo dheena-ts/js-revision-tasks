@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 100px;
+}
+img{
+    margin: 10px;
+}
+body{
+    background-color: black;
+}

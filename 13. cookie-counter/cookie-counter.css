@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(22, 16, 11);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 500px;
+    margin-left: 650px;
+    margin-top: 350px;
+    padding: 50px;
+    background-color:rgb(29, 213, 219);
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: bisque;
+}

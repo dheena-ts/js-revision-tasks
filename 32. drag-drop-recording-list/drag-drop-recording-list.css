@@ -1,0 +1,33 @@
+ul {
+    width: 200px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    background: #1fbfca;
+    cursor: move
+}
+
+body{
+    background-color: rgb(69, 71, 69);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 350px;
+    padding: 20px;
+    /* background-color:rgb(255, 245, 245); */
+    border-radius: 10px;
+}
+
+#content{
+    font-size: 20px;
+    font-weight: bolder;
+}

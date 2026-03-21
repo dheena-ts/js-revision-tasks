@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generate Random Number</title>
     <link rel="stylesheet" href="./generateRandomNumber.css">
 </head>
+
 <body>
 
-    <label for="">Min: </label>
-    <input type="number" id="userInputMin">
+    <div class="container">
 
-    <label for="">Max: </label>
-    <input type="number" id="userInputMax">
+        <label for="">Min: </label>
+        <input type="number" id="userInputMin">
 
-    <div id="errorDiv"></div>
+        <label for="">Max: </label>
+        <input type="number" id="userInputMax">
 
-    <button onclick="getRandom()">Result</button>
+        <div id="errorDiv"></div>
 
-    <div id="resultDiv"></div>
+        <button onclick="getRandom()">Result</button>
+
+        <div id="resultDiv"></div>
+
+    </div>
+
 
     <script src="./generateRandomNumber.js"></script>
 </body>
+
 </html>

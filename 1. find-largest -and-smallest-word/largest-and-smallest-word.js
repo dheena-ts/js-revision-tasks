@@ -7,11 +7,12 @@ function findWordsAndDisplay() {
         error.innerHTML="Please enter a input"
         return;
     }
-
    
     const words = sentence.match(/\w+/g); 
+    console.log(words);
+    
 
-    if (!words || words.length === 0) {
+    if (!words || words.length === 0 ) {
         error.innerHTML="No words found in the input"
         return;
     }

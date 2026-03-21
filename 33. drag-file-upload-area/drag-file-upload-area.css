@@ -1,0 +1,29 @@
+
+body{
+    background-color: rgb(51, 92, 95);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#drop {
+    width: 300px;
+    padding: 40px;
+    border: 2px dashed rgb(7, 6, 6);
+    text-align: center;
+    cursor: pointer
+}
+
+#drop.hover {
+    border-color: blue;
+    background: #f0f8ff
+}

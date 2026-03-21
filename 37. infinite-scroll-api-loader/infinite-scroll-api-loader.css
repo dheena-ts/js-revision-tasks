@@ -1,0 +1,25 @@
+.myClass{
+    border: 1px solid black;
+    height: 100px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+body{
+    background-color: rgb(27, 29, 27);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    /* padding: 20px; */
+    /* background-color:rgb(255, 245, 245); */
+    border-radius: 10px;
+}
