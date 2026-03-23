@@ -8,9 +8,14 @@ body{
 #container{
     margin-top: 70px;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 200px;
     width: 200px;
-    margin-left: 350px;
+    margin-top: 300px;
+    margin-left: 850px;
     background-color: aqua;
     border-radius: 5px;
 }

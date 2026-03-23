@@ -21,3 +21,20 @@
     border: 1px solid black;
     z-index: 1000;
 }
+
+body{
+    background-color: rgb(187, 93, 16);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    margin-left: 450px;
+    margin-top: 250px;
+    padding: 20px;
+    background-color:rgb(129, 121, 121);
+    border-radius: 10px;
+}

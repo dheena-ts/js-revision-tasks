@@ -1,5 +1,6 @@
 body {
     height: 3000px;
+        background-color: #6A7E3F;
 }
 
 .box {
@@ -8,4 +9,14 @@ body {
     background: white;
     padding: 5px;
     border: 1px solid black
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 30%;
+    margin-left: 650px;
+    padding: 20px;
 }

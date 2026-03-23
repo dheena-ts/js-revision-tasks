@@ -1,8 +1,26 @@
 button{
     padding:2px 8px;
-    margin:10px
+    border-radius: 5px;
+    margin:10px    
 }
 
 #loader{
     display:none
 }
+body{
+    background-color: #11886e;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 30%;
+    margin-left: 650px;
+    margin-top: 350px;
+    padding: 20px;
+    background-color:rgb(192, 189, 177);
+    border-radius: 10px;
+}
+
